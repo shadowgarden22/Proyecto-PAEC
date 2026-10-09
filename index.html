@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PAEC - Bienestar Animal</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #d9f5d2, #d8d2e8);
+            color: #222;
+        }
+
+        header {
+            background: #8b2be2;
+            min-height: 150px;
+        }
+
+        .encabezado {
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 25px;
+        }
+
+        .encabezado h1 {
+            margin: 0;
+            font-size: 40px;
+            color: #111;
+        }
+
+        /* LOGO CORREGIDO */
+        .encabezado img {
+            width: 250px;
+            height: 100px;
+            object-fit: contain;
+            object-position: center;
+            background: white;
+        }
+
+        nav {
+            display: flex;
+            gap: 12px;
+        }
+
+        .boton {
+            background: #0909df;
+            color: white;
+            text-decoration: none;
+            padding: 13px 25px;
+            border-radius: 7px 7px 0 0;
+            font-size: 19px;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        .boton:hover {
+            background: #5316bd;
+            transform: translateY(-3px);
+        }
+
+        .activo {
+            background: #080060;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: 420px 1fr;
+            gap: 70px;
+            padding: 25px;
+        }
+
+        .anuncio {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            min-height: 450px;
+        }
+
+        .anuncio-contenido {
+            text-align: center;
+            background: #fafafa;
+            padding: 25px;
+            margin-top: 25px;
+            border-radius: 10px;
+        }
+
+        .anuncio h2 {
+            font-size: 25px;
+        }
+
+        .anuncio h3 {
+            color: #7024c4;
+            font-size: 24px;
+        }
+
+        .huellas {
+            font-size: 40px;
+            margin: 25px;
+        }
+
+        .contenido {
+            background: linear-gradient(145deg, #291a43, #11182c);
+            color: white;
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: 0 5px 20px #555;
+        }
+
+        .contenido > h2 {
+            text-align: center;
+            color: #d9a7ff;
+            font-size: 32px;
+        }
+
+        .presentacion {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .texto {
+            flex: 1;
+        }
+
+        .texto h3 {
+            color: #e0b6ff;
+        }
+
+        .texto p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .imagen {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 4px solid #9d66e8;
+        }
+
+        .mensaje {
+            margin-top: 35px;
+            padding: 25px;
+            background: #452567;
+            border-left: 5px solid #d29aff;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #20132e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media(max-width:900px) {
+
+            .contenedor {
+                grid-template-columns: 1fr;
+            }
+
+            .presentacion {
+                flex-direction: column;
+            }
+
+            .encabezado img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="encabezado">
+
+        <h1>Bienestar Animal</h1>
+
+        <!-- LOGO -->
+        <img src="imagen/logo.jpg" alt="Logo de Bienestar Animal">
+
+    </div>
+
+    <nav>
+
+        <a href="index.html" class="boton activo">
+            Inicio
+        </a>
+
+        <a href="adopciones.html" class="boton">
+            Adopciones
+        </a>
+
+        <a href="donaciones.html" class="boton">
+            Donaciones
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="contenedor">
+
+    <aside class="anuncio">
+
+        <h2>🐾 Anuncio</h2>
+
+        <div class="anuncio-contenido">
+
+            <h3>¡Adopta un amigo!</h3>
+
+            <p>
+                Adoptar cambia dos vidas:
+            </p>
+
+            <p>
+                <strong>la de ellos y la tuya.</strong>
+            </p>
+
+            <div class="huellas">
+                🐶 🐱 🐾
+            </div>
+
+            <p>
+                No compres, adopta y brinda una segunda oportunidad.
+            </p>
+
+        </div>
+
+    </aside>
+
+
+    <section class="contenido">
+
+        <h2>Proyecto PAEC: Bienestar Animal</h2>
+
+        <div class="presentacion">
+
+            <div class="texto">
+
+                <h3>🐶🐱 Un hogar puede cambiarlo todo</h3>
+
+                <p>
+                    Nuestro proyecto PAEC tiene como propósito promover
+                    el cuidado, respeto y bienestar de los animales.
+                </p>
+
+                <p>
+                    Queremos crear conciencia sobre la importancia de
+                    brindar alimento, protección, atención y cariño
+                    a perros y gatos.
+                </p>
+
+                <p>
+                    Mediante la adopción y las donaciones podemos ayudar
+                    a animales que necesitan una segunda oportunidad.
+                </p>
+
+            </div>
+
+            <img class="imagen"
+                 src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=600&q=80"
+                 alt="Perro">
+
+        </div>
+
+
+        <div class="mensaje">
+
+            <h3>💜 Mensaje de concientización</h3>
+
+            <p>
+                Los animales sienten miedo, alegría, dolor y cariño.
+                Merecen ser tratados con respeto y responsabilidad.
+            </p>
+
+            <strong>
+                "Una mascota no necesita un hogar perfecto,
+                necesita un hogar que la quiera."
+            </strong>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    🐾 Proyecto PAEC | Unidos por el bienestar animal 🐾
+
+</footer>
+
+</body>
+</html>

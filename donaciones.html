@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PAEC - Donaciones</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #d9f5d2, #d8d2e8);
+        }
+
+        header {
+            background: #8b2be2;
+            min-height: 150px;
+        }
+
+        .encabezado {
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .encabezado h1 {
+            margin-left: 25px;
+            font-size: 40px;
+            color: #111;
+        }
+
+        .encabezado img {
+            width: 250px;
+            height: 145px;
+            object-fit: cover;
+        }
+
+        nav {
+            display: flex;
+            gap: 12px;
+        }
+
+        .boton {
+            background: #0909df;
+            color: white;
+            text-decoration: none;
+            padding: 13px 25px;
+            border-radius: 7px 7px 0 0;
+            font-size: 19px;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        .boton:hover {
+            background: #5316bd;
+            transform: translateY(-3px);
+        }
+
+        .activo {
+            background: #080060;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: 420px 1fr;
+            gap: 70px;
+            padding: 25px;
+        }
+
+        .anuncio {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .anuncio-contenido {
+            text-align: center;
+            background: #fafafa;
+            padding: 25px;
+            margin-top: 25px;
+            border-radius: 10px;
+        }
+
+        .anuncio h3 {
+            color: #7024c4;
+        }
+
+        .huellas {
+            font-size: 40px;
+            margin: 25px;
+        }
+
+        .contenido {
+            background: linear-gradient(145deg, #291a43, #11182c);
+            color: white;
+            border-radius: 16px;
+            padding: 35px;
+        }
+
+        .contenido > h2 {
+            text-align: center;
+            color: #d9a7ff;
+            font-size: 32px;
+        }
+
+        .donaciones {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .lista {
+            background: white;
+            color: #222;
+            padding: 22px;
+            border-radius: 12px;
+            transition: .3s;
+        }
+
+        .lista:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px #9d66e8;
+        }
+
+        .lista h3 {
+            color: #7024c4;
+            font-size: 23px;
+        }
+
+        .lista li {
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        .informacion {
+            margin-top: 30px;
+            background: #43245d;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .informacion h2 {
+            color: #e0b6ff;
+        }
+
+        .gracias {
+            background: #7024c4;
+            padding: 18px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #20132e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media(max-width:900px) {
+
+            .contenedor {
+                grid-template-columns: 1fr;
+            }
+
+            .donaciones {
+                grid-template-columns: 1fr;
+            }
+
+            .encabezado img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="encabezado">
+
+        <h1>Donaciones 🐾</h1>
+
+        <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=500&q=80">
+
+    </div>
+
+    <nav>
+
+        <a href="index.html" class="boton">Inicio</a>
+
+        <a href="adopciones.html" class="boton">Adopciones</a>
+
+        <a href="donaciones.html" class="boton activo">Donaciones</a>
+
+    </nav>
+
+</header>
+
+<main class="contenedor">
+
+    <aside class="anuncio">
+
+        <h2>📦 Donaciones</h2>
+
+        <div class="anuncio-contenido">
+
+            <h3>¡Tu ayuda cuenta!</h3>
+
+            <p>
+                Una bolsa de alimento, una cobija o un artículo
+                de limpieza puede hacer una gran diferencia.
+            </p>
+
+            <div class="huellas">
+                🐾 💜 🐾
+            </div>
+
+        </div>
+
+    </aside>
+
+    <section class="contenido">
+
+        <h2>📦 Centro de Acopio</h2>
+
+        <p>
+            Puedes colaborar donando cualquiera de los siguientes
+            artículos para apoyar a nuestros perros y gatos.
+        </p>
+
+        <div class="donaciones">
+
+            <div class="lista">
+
+                <h3>🍖 Alimentos</h3>
+
+                <ul>
+                    <li>Alimento para perros</li>
+                    <li>Alimento para gatos</li>
+                    <li>Alimento para cachorros</li>
+                    <li>Premios para mascotas</li>
+                </ul>
+
+            </div>
+
+            <div class="lista">
+
+                <h3>🛏️ Cobijas</h3>
+
+                <ul>
+                    <li>Cobijas</li>
+                    <li>Camas para mascotas</li>
+                    <li>Toallas</li>
+                    <li>Tapetes</li>
+                </ul>
+
+            </div>
+
+            <div class="lista">
+
+                <h3>🧼 Limpieza</h3>
+
+                <ul>
+                    <li>Jabón</li>
+                    <li>Cloro</li>
+                    <li>Desinfectante</li>
+                    <li>Bolsas de basura</li>
+                    <li>Guantes</li>
+                </ul>
+
+            </div>
+
+            <div class="lista">
+
+                <h3>🐾 Accesorios</h3>
+
+                <ul>
+                    <li>Collares</li>
+                    <li>Correas</li>
+                    <li>Platos</li>
+                    <li>Juguetes</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="informacion">
+
+            <h2>📍 Información del Centro de Acopio</h2>
+
+            <p>
+                <strong>📍 Lugar:</strong>
+                Centro Comunitario PAEC
+            </p>
+
+            <p>
+                <strong>📅 Fecha:</strong>
+                Lunes 12 de octubre al viernes 16 de octubre
+            </p>
+
+            <p>
+                <strong>🕐 Horario:</strong>
+                9:00 AM - 4:00 PM
+            </p>
+
+            <p>
+                <strong>📦 Se reciben:</strong>
+                Alimentos, cobijas, artículos de limpieza
+                y accesorios.
+            </p>
+
+            <div class="gracias">
+                💜 ¡Gracias por ayudar a nuestros amigos de cuatro patas! 🐾
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    🐾 Proyecto PAEC | Cada donación hace la diferencia 🐾
+</footer>
+
+</body>
+</html>
